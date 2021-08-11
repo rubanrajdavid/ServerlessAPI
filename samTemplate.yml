@@ -32,5 +32,3 @@ Resources:
           Properties:
             Path: /testapi
             Method: get
-            RestApiId:
-              Ref: ServerlessApi

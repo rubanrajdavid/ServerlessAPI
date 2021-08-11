@@ -1,0 +1,9 @@
+version: 0.1
+phases:
+  pre_build:
+    commands:
+      - aws cloudformation package --template-file samTemplate.yml --s3-bucket ruban-serverless-api-cicd --output-template-file cfnTemplate.yml
+  artifacts:
+    files:
+      - samTemplate.yml
+      - cfnTemplate.yml
